@@ -30,13 +30,15 @@ export class EndpointLib {
       }
     ])
 
-    console.log(`--> Creating '${endpointName}' endpoint at '${endpointsPath}/${endpointName}'.`)
+    const relativeOutputPath = this.utils.getRelativePath([endpointsPath, endpointName])
+
+    console.log(`--> Creating '${endpointName}' endpoint at '${relativeOutputPath}'.`)
 
     templates.forEach((templateFilename) => {
       let content = this.utils.getContentFromTemplate(templateFilename)
       content = this.utils.replaceContent(content, replacements)
       const filename = this.utils.getFilename(endpointName,templateFilename)
-      this.utils.createFileFromTemplate(endpointsPath, filename, content)
+      this.utils.createFileFromTemplate(relativeOutputPath, filename, content)
     })
   }
 }
