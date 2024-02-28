@@ -1,3 +1,6 @@
+![ZeenBanner](https://github.com/monterourena/zeen/assets/117543842/7ae8345c-f3e1-409c-80f7-d1225e4d68ae)
+
+
 Zeen is a versatile Command Line Interface (CLI) tool designed to streamline project setup and development workflows for Express, MongoDB, and TypeScript projects. With Zeen, you can effortlessly create custom endpoints, controllers, and models using TypeScript, simplifying your CLI development process.
 
 ## Table Of Contents
