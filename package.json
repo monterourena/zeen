@@ -1,6 +1,6 @@
 {
   "name": "@monterourena/zeen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The ExpressMongooseTS Boilerplate Generator is a versatile CLI tool designed to streamline the process of setting up boilerplate code, endpoints, and project structure for applications built using Express.js, Mongoose, and TypeScript. With a focus on developer productivity, this library automates the creation of essential components such as controllers, routers, models, and middleware, allowing developers to quickly scaffold projects and focus on building robust APIs and web applications. Whether you're starting a new project or extending an existing one, this tool provides a convenient and standardized way to kickstart your development workflow in TypeScript with Express and Mongoose.",
   "main": "dist/app.js",
   "type": "module",
@@ -12,6 +12,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && tsc && shx cp -R src/templates/ dist/templates",
     "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "zeen": "./dist/app.js" 
   },
   "author": "monterourena",
   "license": "MIT",

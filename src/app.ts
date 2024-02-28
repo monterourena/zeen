@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from 'commander'
 import { EndpointLib } from './lib/endpoint.lib.js'
 import { BaseLib } from './lib/base.lib.js'

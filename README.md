@@ -24,7 +24,7 @@ Zeen is a versatile Command Line Interface (CLI) tool designed to streamline pro
 You can install Zeen globally using npm:
 
 ```bash
-npm install -g zeen
+npm install -g  @monterourena/zeen
 ```
 
 ## Usage
